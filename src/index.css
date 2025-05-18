@@ -6,68 +6,68 @@
 @tailwind utilities;
 
 @layer base {
-  /* Dark mode - default */
-  .dark, :root {
-    --background: 0 0% 0%;
-    --foreground: 138 100% 50%;
+  /* Light mode - default */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 199 89% 48%;
 
-    --card: 0 0% 7%;
-    --card-foreground: 138 100% 50%;
+    --card: 0 0% 98%;
+    --card-foreground: 199 89% 48%;
 
-    --popover: 0 0% 0%;
-    --popover-foreground: 138 100% 50%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 199 89% 48%;
 
-    --primary: 138 100% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 138 100% 50%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 199 89% 48%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 138 60% 90%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 138 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 138 100% 50%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 138 60% 30%;
-    --input: 240 3.7% 15.9%;
-    --ring: 138 100% 50%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 199 89% 48%;
 
     --radius: 0.75rem;
   }
 
-  /* Light mode */
-  .light {
-    --background: 0 0% 100%;
-    --foreground: 138 100% 25%;
+  /* Dark mode */
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 199 89% 48%;
 
-    --card: 0 0% 95%;
-    --card-foreground: 138 100% 25%;
+    --card: 222.2 84% 9.8%;
+    --card-foreground: 199 89% 48%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 138 100% 25%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 199 89% 48%;
 
-    --primary: 138 100% 35%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 3.7% 85.9%;
-    --secondary-foreground: 138 100% 25%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 199 89% 48%;
 
-    --muted: 240 3.7% 85.9%;
-    --muted-foreground: 138 40% 30%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 138 100% 35%;
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 50.6%;
-    --destructive-foreground: 138 100% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 138 60% 80%;
-    --input: 240 3.7% 85.9%;
-    --ring: 138 100% 35%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 199 89% 48%;
   }
 
   * {
@@ -81,11 +81,11 @@
   }
   
   .glass-card {
-    @apply bg-white/5 dark:bg-white/5 backdrop-blur-lg border border-gray-200/20 dark:border-hackSignal-green/20 rounded-2xl shadow-lg;
+    @apply bg-white/80 dark:bg-hackSignal-dark/80 backdrop-blur-lg border border-gray-200/20 dark:border-hackSignal-green/20 rounded-2xl shadow-lg;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-hackSignal-green to-hackSignal-green-light bg-clip-text text-transparent;
   }
   
   .hover-lift {
@@ -106,7 +106,7 @@
   }
 
   .card-gradient {
-    @apply bg-gradient-to-br from-gray-100/50 dark:from-hackSignal-light/50 to-gray-200/80 dark:to-hackSignal/80 backdrop-blur-sm;
+    @apply bg-gradient-to-br from-white/95 dark:from-hackSignal-light/95 to-gray-100/80 dark:to-hackSignal/80 backdrop-blur-sm;
   }
 }
 

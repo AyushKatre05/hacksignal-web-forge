@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   
   return (
     <div className="flex items-center gap-2">
-      <Sun size={18} className={theme === 'dark' ? "text-gray-500" : "text-yellow-500"} />
+      <Sun size={18} className={theme === 'dark' ? "text-gray-500" : "text-hackSignal-green-light"} />
       <Switch 
         checked={theme === 'dark'} 
         onCheckedChange={toggleTheme}
