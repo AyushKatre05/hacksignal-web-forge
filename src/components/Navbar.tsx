@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,8 +57,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <h1 className="text-xl md:text-2xl font-bold font-sora">
-              <span className="text-white">Hack</span>
-              <span className="text-hackSignal-purple">Signal</span>
+              <span className="text-hackSignal-green">Hack</span>
+              <span className="text-hackSignal-green-light">Signal</span>
             </h1>
           </Link>
           
@@ -68,8 +68,8 @@ const Navbar = () => {
               <a 
                 key={link.id} 
                 href={link.path} 
-                className={`text-sm font-medium transition-colors duration-300 hover:text-hackSignal-purple ${
-                  activeSection === link.id ? 'text-hackSignal-purple' : 'text-gray-300'
+                className={`text-sm font-medium transition-colors duration-300 hover:text-hackSignal-green ${
+                  activeSection === link.id ? 'text-hackSignal-green' : 'text-gray-300'
                 }`}
               >
                 {link.name}
@@ -80,7 +80,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
-            className="md:hidden text-white hover:text-hackSignal-purple transition-colors"
+            className="md:hidden text-hackSignal-green hover:text-hackSignal-green-light transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -88,14 +88,14 @@ const Navbar = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden bg-hackSignal-dark/95 backdrop-blur-lg mt-4 rounded-lg p-4 border border-hackSignal-purple/20 animate-fade-in">
+          <nav className="md:hidden bg-hackSignal-dark/95 backdrop-blur-lg mt-4 rounded-lg p-4 border border-hackSignal-green/20 animate-fade-in">
             <ul className="space-y-4">
               {navLinks.map((link) => (
                 <li key={link.id}>
                   <a 
                     href={link.path} 
-                    className={`block py-2 px-4 text-sm font-medium hover:bg-hackSignal-purple/10 rounded-lg transition-colors ${
-                      activeSection === link.id ? 'text-hackSignal-purple' : 'text-gray-300'
+                    className={`block py-2 px-4 text-sm font-medium hover:bg-hackSignal-green/10 rounded-lg transition-colors ${
+                      activeSection === link.id ? 'text-hackSignal-green' : 'text-gray-300'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >

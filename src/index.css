@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 0%;
+    --foreground: 138 100% 50%;
 
-    --card: 222 47% 9%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 7%;
+    --card-foreground: 138 100% 50%;
 
-    --popover: 222 47% 11%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 138 100% 50%;
 
-    --primary: 265 89% 78%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 138 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
     --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary-foreground: 138 100% 50%;
 
     --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted-foreground: 138 60% 90%;
 
-    --accent: 264 83% 62%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 138 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 138 100% 50%;
 
-    --border: 240 3.7% 15.9%;
+    --border: 138 60% 30%;
     --input: 240 3.7% 15.9%;
-    --ring: 265 89% 78%;
+    --ring: 138 100% 50%;
 
     --radius: 0.75rem;
   }
@@ -49,11 +49,11 @@
   }
   
   .glass-card {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg;
+    @apply bg-white/5 backdrop-blur-lg border border-hackSignal-green/20 rounded-2xl shadow-lg;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-hackSignal-purple to-hackSignal-purple-light bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-hackSignal-green to-hackSignal-green-light bg-clip-text text-transparent;
   }
   
   .hover-lift {

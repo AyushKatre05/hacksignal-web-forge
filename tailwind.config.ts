@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -54,12 +53,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				hackSignal: {
-					DEFAULT: '#1A1F2C',
-					light: '#293245',
-					dark: '#131722', 
-					purple: '#9b87f5',
-					'purple-dark': '#6E59A5',
-					'purple-light': '#B29DFF',
+					DEFAULT: '#000000',
+					light: '#121212',
+					dark: '#000000', 
+					green: '#00FF41',
+					'green-dark': '#00CC33',
+					'green-light': '#4DFF77',
 				},
 			},
 			fontFamily: {
