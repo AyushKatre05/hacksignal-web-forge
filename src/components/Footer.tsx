@@ -6,7 +6,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   
   return (
-    <footer className="bg-hackSignal border-t border-hackSignal-green/20 pt-12 pb-6">
+    <footer className="bg-hackSignal dark:bg-hackSignal border-t border-gray-200/20 dark:border-hackSignal-green/20 pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -15,20 +15,20 @@ const Footer = () => {
               <span className="text-hackSignal-green">Hack</span>
               <span className="text-hackSignal-green-light">Signal</span>
             </h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
               Powering the Future with Code, AI, and Security
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-hackSignal-green transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-hackSignal-green transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-hackSignal-green transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-hackSignal-green transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-hackSignal-green transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-hackSignal-green transition-colors">
                 <Github size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-hackSignal-green transition-colors">
+              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-hackSignal-green transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
@@ -38,11 +38,11 @@ const Footer = () => {
           <div>
             <h4 className="text-hackSignal-green font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="/#about" className="text-gray-400 hover:text-hackSignal-green transition-colors">About Us</a></li>
-              <li><a href="/#services" className="text-gray-400 hover:text-hackSignal-green transition-colors">Services</a></li>
-              <li><a href="/#join" className="text-gray-400 hover:text-hackSignal-green transition-colors">Join the Team</a></li>
-              <li><a href="/#order" className="text-gray-400 hover:text-hackSignal-green transition-colors">Order a Solution</a></li>
-              <li><a href="/#blog" className="text-gray-400 hover:text-hackSignal-green transition-colors">Blog</a></li>
+              <li><a href="/#about" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">About Us</a></li>
+              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Services</a></li>
+              <li><a href="/#join" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Join the Team</a></li>
+              <li><a href="/#order" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Order a Solution</a></li>
+              <li><a href="/#blog" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Blog</a></li>
             </ul>
           </div>
           
@@ -50,10 +50,10 @@ const Footer = () => {
           <div>
             <h4 className="text-hackSignal-green font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="/#services" className="text-gray-400 hover:text-hackSignal-green transition-colors">Custom Software Development</a></li>
-              <li><a href="/#services" className="text-gray-400 hover:text-hackSignal-green transition-colors">AI & Generative AI Solutions</a></li>
-              <li><a href="/#services" className="text-gray-400 hover:text-hackSignal-green transition-colors">Cybersecurity Audits</a></li>
-              <li><a href="/#services" className="text-gray-400 hover:text-hackSignal-green transition-colors">Tech Consulting</a></li>
+              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Custom Software Development</a></li>
+              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">AI & Generative AI Solutions</a></li>
+              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Cybersecurity Audits</a></li>
+              <li><a href="/#services" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">Tech Consulting</a></li>
             </ul>
           </div>
           
@@ -63,19 +63,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail size={18} className="mt-1 mr-2 text-hackSignal-green" />
-                <a href="mailto:info@hacksignal.com" className="text-gray-400 hover:text-hackSignal-green transition-colors">
+                <a href="mailto:info@hacksignal.com" className="text-gray-600 dark:text-gray-400 hover:text-hackSignal-green transition-colors">
                   info@hacksignal.com
                 </a>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="mt-1 mr-2 text-hackSignal-green" />
-                <span className="text-gray-400">
+                <span className="text-gray-600 dark:text-gray-400">
                   +1 (555) 123-4567
                 </span>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mt-1 mr-2 text-hackSignal-green" />
-                <span className="text-gray-400">
+                <span className="text-gray-600 dark:text-gray-400">
                   Tech District, Innovation City,<br />
                   Digital Avenue 123
                 </span>
@@ -85,14 +85,14 @@ const Footer = () => {
         </div>
         
         {/* Newsletter */}
-        <div className="mt-12 border-t border-hackSignal-green/20 pt-8 pb-4">
+        <div className="mt-12 border-t border-gray-200/20 dark:border-hackSignal-green/20 pt-8 pb-4">
           <div className="max-w-md mx-auto text-center">
-            <h4 className="text-hackSignal-green font-semibold mb-4">Subscribe to our Newsletter</h4>
+            <h4 className="text-hackSignal-green font-semibold mb-4">Subscribe to Our Newsletter</h4>
             <div className="flex flex-col sm:flex-row gap-2">
               <input
                 type="email"
                 placeholder="Your email address"
-                className="flex-1 px-4 py-2 rounded-lg bg-hackSignal-light/30 border border-hackSignal-green/30 text-white focus:outline-none focus:ring-2 focus:ring-hackSignal-green"
+                className="flex-1 px-4 py-2 rounded-lg bg-gray-100/30 dark:bg-hackSignal-light/30 border border-gray-300/30 dark:border-hackSignal-green/30 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-hackSignal-green"
               />
               <button className="bg-hackSignal-green hover:bg-hackSignal-green-dark text-black px-4 py-2 rounded-lg transition-colors">
                 Subscribe

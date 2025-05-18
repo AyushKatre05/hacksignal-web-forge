@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-hackSignal/80 dark:bg-hackSignal/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-hackSignal/80 dark:bg-hackSignal/80 backdrop-blur-md shadow-lg' : 'bg-transparent dark:bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 py-4">
@@ -58,8 +58,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <h1 className="text-xl md:text-2xl font-bold font-sora">
-              <span className="text-hackSignal-green">Hack</span>
-              <span className="text-hackSignal-green-light">Signal</span>
+              <span className="text-hackSignal-green dark:text-hackSignal-green">Hack</span>
+              <span className="text-hackSignal-green-light dark:text-hackSignal-green-light">Signal</span>
             </h1>
           </Link>
           
@@ -70,7 +70,9 @@ const Navbar = () => {
                 key={link.id} 
                 href={link.path} 
                 className={`text-sm font-medium transition-colors duration-300 hover:text-hackSignal-green ${
-                  activeSection === link.id ? 'text-hackSignal-green' : 'text-gray-800 dark:text-gray-300'
+                  activeSection === link.id 
+                    ? 'text-hackSignal-green dark:text-hackSignal-green' 
+                    : 'text-gray-800 dark:text-gray-300'
                 }`}
               >
                 {link.name}
@@ -86,7 +88,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)} 
-            className="md:hidden text-hackSignal-green hover:text-hackSignal-green-light transition-colors"
+            className="md:hidden text-hackSignal-green dark:text-hackSignal-green hover:text-hackSignal-green-light transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -101,7 +103,7 @@ const Navbar = () => {
                   <a 
                     href={link.path} 
                     className={`block py-2 px-4 text-sm font-medium hover:bg-gray-100 dark:hover:bg-hackSignal-green/10 rounded-lg transition-colors ${
-                      activeSection === link.id ? 'text-hackSignal-green' : 'text-gray-800 dark:text-gray-300'
+                      activeSection === link.id ? 'text-hackSignal-green dark:text-hackSignal-green' : 'text-gray-800 dark:text-gray-300'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
