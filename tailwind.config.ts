@@ -54,12 +54,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				hackSignal: {
-					DEFAULT: '#FFFFFF',
-					light: '#F1F1F1',
-					dark: '#222222', 
-					green: '#1EAEDB',
-					'green-dark': '#0E8EB8',
-					'green-light': '#33C3F0',
+					DEFAULT: '#1A1F2C',
+					light: '#293245',
+					dark: '#131722', 
+					purple: '#9b87f5',
+					'purple-dark': '#6E59A5',
+					'purple-light': '#B29DFF',
 				},
 			},
 			fontFamily: {
