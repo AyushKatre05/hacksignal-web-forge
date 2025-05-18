@@ -6,7 +6,8 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  /* Dark mode - default */
+  .dark, :root {
     --background: 0 0% 0%;
     --foreground: 138 100% 50%;
 
@@ -38,22 +39,53 @@
     --radius: 0.75rem;
   }
 
+  /* Light mode */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 138 100% 25%;
+
+    --card: 0 0% 95%;
+    --card-foreground: 138 100% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 138 100% 25%;
+
+    --primary: 138 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 3.7% 85.9%;
+    --secondary-foreground: 138 100% 25%;
+
+    --muted: 240 3.7% 85.9%;
+    --muted-foreground: 138 40% 30%;
+
+    --accent: 138 100% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 138 100% 98%;
+
+    --border: 138 60% 80%;
+    --input: 240 3.7% 85.9%;
+    --ring: 138 100% 35%;
+  }
+
   * {
-    @apply border-border selection:bg-white/10 selection:text-white;
+    @apply border-border selection:bg-accent/10 selection:text-accent;
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-hackSignal text-foreground antialiased;
+    @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
   
   .glass-card {
-    @apply bg-white/5 backdrop-blur-lg border border-hackSignal-green/20 rounded-2xl shadow-lg;
+    @apply bg-white/5 dark:bg-white/5 backdrop-blur-lg border border-gray-200/20 dark:border-hackSignal-green/20 rounded-2xl shadow-lg;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-hackSignal-green to-hackSignal-green-light bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
   
   .hover-lift {
@@ -74,7 +106,7 @@
   }
 
   .card-gradient {
-    @apply bg-gradient-to-br from-hackSignal-light/50 to-hackSignal/80 backdrop-blur-sm;
+    @apply bg-gradient-to-br from-gray-100/50 dark:from-hackSignal-light/50 to-gray-200/80 dark:to-hackSignal/80 backdrop-blur-sm;
   }
 }
 
